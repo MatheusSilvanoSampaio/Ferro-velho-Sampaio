@@ -1,52 +1,21 @@
 <div class="row">
     <div class="col-xs-5">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">
-                    Latinha
-                </h4>
-                <h4 class="list-group-item-text green">
-                    R$ 8.5 Kg
-                </h4>
-            </div>
-        </a>
+        <label for="">
+            Nome
+        </label>
+        <input type="text" class="form-control" #materialNameInput>
     </div>
-    <div class="col-xs-5">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">
-                    Ferro
-                </h4>
-                <h4 class="list-group-item-text green">
-                    R$ 1.1 Kg
-                </h4>
-            </div>
-        </a>
+    <div class="col-xs-2">
+        <label for="">
+            Preço
+        </label>
+        <input type="text" class="form-control" #materialPriceInput>
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-5">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">
-                    Perfil
-                </h4>
-                <h4 class="list-group-item-text green">
-                    R$ 9 Kg
-                </h4>
-            </div>
-        </a>
-    </div>
-    <div class="col-xs-5">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">
-                    Ferro pesado
-                </h4>
-                <h4 class="list-group-item-text green">
-                    R$ 1.3 Kg
-                </h4>
-            </div>
-        </a>
+    <div class="col-xs-2">
+        <button
+        class="btn btn-primary"
+        (click)="addMaterial()">Add material</button>
     </div>
 </div>

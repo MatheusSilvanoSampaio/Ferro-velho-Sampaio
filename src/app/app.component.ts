@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ferro-velho-sampaio';
+  serverElement: any = [];
+  onServerAdded(serverData: {materialNameInput: string, materialPriceInput: string}) {
+    this.serverElement.push({
+      name: serverData.materialNameInput,
+      price: serverData.materialPriceInput,
+    });
+  }
 }
